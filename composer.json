@@ -1,0 +1,12 @@
+{
+    "name": "setkyar/time",
+    "description": "Try to solve formating time",
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "setkyar",
+            "email": "setkyar16@gmail.com"
+        }
+    ],
+    "require": {}
+}
