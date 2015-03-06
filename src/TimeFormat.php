@@ -11,8 +11,8 @@ class TimeFormat
 	 * @return void
 	 * @author Set Kyar Wa Lar
 	 **/
-	public function FunctionName($value='')
+	public function format($date = new Date())
 	{
-		# code...
+		return $date;
 	}
 }

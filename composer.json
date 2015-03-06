@@ -1,5 +1,5 @@
 {
-    "name": "setkyar/time",
+    "name": "setkyar/timeformat",
     "description": "Try to solve formating time",
     "license": "WTFPL",
     "keywords" : ["time format"],
@@ -10,14 +10,14 @@
         }
     ],
     "require": {
-
+        "php": ">=5.4.0"
     },
     "require-dev": {
         "phpunit/phpunit": "4.0.*"
     },
     "autoload": {
         "psr4" : {
-            "SetKyar\\TimeFormat" :"src"
+            "SetKyar\\TimeFormat\\" :"src"
         }
     }
 }
