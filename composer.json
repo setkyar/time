@@ -2,11 +2,22 @@
     "name": "setkyar/time",
     "description": "Try to solve formating time",
     "license": "WTFPL",
+    "keywords" : ["time format"],
     "authors": [
         {
             "name": "setkyar",
             "email": "setkyar16@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
+    },
+    "autoload": {
+        "psr4" : {
+            "SetKyar\\TimeFormat" :"src"
+        }
+    }
 }
