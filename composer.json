@@ -1,11 +1,11 @@
 {
     "name": "setkyar/timeformat",
-    "description": "Try to solve formating time",
+    "description": "Format your time",
     "license": "WTFPL",
-    "keywords" : ["time format"],
+    "keywords": ["time format"],
     "authors": [
         {
-            "name": "setkyar",
+            "name": "Set Kyar Wa Lar",
             "email": "setkyar16@gmail.com"
         }
     ],
@@ -16,8 +16,8 @@
         "phpunit/phpunit": "4.0.*"
     },
     "autoload": {
-        "psr4" : {
-            "SetKyar\\TimeFormat\\" :"src"
+        "psr-4": {
+            "SetKyar\\TimeFormat\\": "src"
         }
     }
 }

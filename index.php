@@ -1,6 +1,6 @@
-<?php
+ <?php
 
-// Display Errors On
+ // Display Errors On
 ini_set('display_errors', 'On');
 
 $autoload = __DIR__.'/vendor/autoload.php';
@@ -12,7 +12,8 @@ if ( ! file_exists($autoload))
 
 require $autoload;
 
+
 use SetKyar\TimeFormat\TimeFormat;
 
 $time = new TimeFormat;
-var_dump($time->Format());
+var_dump($time->format());
