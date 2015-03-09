@@ -12,8 +12,10 @@ if ( ! file_exists($autoload))
 
 require $autoload;
 
-
 use SetKyar\TimeFormat\TimeFormat;
 
-$time = new TimeFormat;
-var_dump($time->format());
+var_dump('First day of the month ' . TimeFormat::firstDayOfthisMonth());
+echo '<br>';
+var_dump('Last day of the month ' . TimeFormat::lastDayOfthisMonth());
+echo '<br>';
+var_dump('First day of next month ' . TimeFormat::firstDayOfNextMonth());
