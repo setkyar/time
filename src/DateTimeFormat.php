@@ -1,6 +1,6 @@
 <?php
 
-namespace SetKyar\TimeFormat;
+namespace SetKyar\DateTimeFormat;
 use DateTime;
 use DateTimeZone;
 use DateInterval;
@@ -9,7 +9,7 @@ use DatePeriod;
 /**
 * @author Set Kyar Wa Lar
 */
-class TimeFormat extends \DateTime
+class DateTimeFormat extends \DateTime
 {
 	/**
 	 * Basic Format Date Will be (m-d-y)

@@ -1,8 +1,8 @@
 {
-    "name": "setkyar/timeformat",
+    "name": "setkyar/datetimeformat",
     "description": "Format your time",
     "license": "WTFPL",
-    "keywords": ["time format"],
+    "keywords": ["date time format"],
     "authors": [
         {
             "name": "Set Kyar Wa Lar",
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SetKyar\\TimeFormat\\": "src"
+            "SetKyar\\DateTimeFormat\\": "src"
         }
     }
 }
