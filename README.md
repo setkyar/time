@@ -9,6 +9,8 @@ This repo is working in progress!
 
 ##Usage
 
+###
+
 Get first day of the month 
 
 	DateTimeFormat::firstDayOfthisMonth();
@@ -31,3 +33,7 @@ Get First day of next month
 - Push to the branch (git push origin my-new-feature)
 - Create a new Pull Request
 - Stars are welcome too :smile:
+
+##License
+
+WTFPL
