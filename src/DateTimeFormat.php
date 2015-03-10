@@ -57,4 +57,16 @@ class DateTimeFormat extends \DateTime
 		return $date->format('m-d-y');
 	}
 
+	/**
+	 * Get last day of next month
+	 *
+	 * @author Set Kyar Wa Lar
+	 **/
+	public function lastDayOfNextMonth($value='')
+	{
+		$date = new DateTime('last day of next month');
+
+		return $date->format('m-d-y');
+	}	
+
 }

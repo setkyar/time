@@ -14,8 +14,5 @@ require $autoload;
 
 use SetKyar\DateTimeFormat\DateTimeFormat;
 
-var_dump('First day of the month ' . DateTimeFormat::firstDayOfthisMonth());
-echo '<br>';
-var_dump('Last day of the month ' . DateTimeFormat::lastDayOfthisMonth());
-echo '<br>';
-var_dump('First day of next month ' . DateTimeFormat::firstDayOfNextMonth());
+
+var_dump('Last day of next month ' . DateTimeFormat::lastDayOfNextMonth());

@@ -4,6 +4,25 @@ PHP Times
 ## WIP
 This repo is working in progress!
 
+##Installation
+
+
+##Usage
+
+Get first day of the month 
+
+	DateTimeFormat::firstDayOfthisMonth();
+
+
+Get last day of the month 
+
+	DateTimeFormat::lastDayOfthisMonth());
+
+Get First day of next month 		
+
+	DateTimeFormat::firstDayOfNextMonth());
+
+
 ##Contributing
 
 - Fork it ( https://github.com/setkyar/time )
