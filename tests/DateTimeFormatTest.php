@@ -16,4 +16,16 @@ class DateTimeFormatTest extends \PHPUnit_Framework_TestCase
 		$date = new DateTimeFormat;
 		$this->assertEquals($date->now(), $now_format);
 	}
+
+	public function testfirstDayOfthisMonth()
+	{
+		//Expected start date of the month is 01
+		$expected_start_date = '01';
+
+		//Calculated start date
+		$date = new DateTime('first day of this month');
+		$first_day_of_this_month_start_date = $date->format('d');
+		
+		$this->assertEquals($first_day_of_this_month_start_date, $expected_start_date);
+	}
 }
