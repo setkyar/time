@@ -5,6 +5,27 @@ PHP Times
 
 ##Usage
 
+Create a `index.php` and put the following code and run `$php -S localhost:8000`
+
+	<?php
+		// Display Errors On
+		ini_set('display_errors', 'On');
+
+		$autoload = __DIR__.'/vendor/autoload.php';
+
+		if ( ! file_exists($autoload))
+		{
+		  exit("Need to run \"composer install\"!");
+		}
+
+		require $autoload;
+
+		use SetKyar\DateTimeFormat\DateTimeFormat;
+		
+		//What you want to use functions goes here!
+
+##Functions
+
 	//Get today
 	DateTimeFormat::now();
 
