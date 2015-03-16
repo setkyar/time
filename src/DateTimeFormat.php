@@ -7,14 +7,14 @@ use DateInterval;
 use DatePeriod;
 
 /**
-* @author Set Kyar Wa Lar
+* @author SetKyarWaLar
 */
 class DateTimeFormat extends \DateTime
 {
 	/**
 	 * Basic Format Date Will be (m-d-y)
 	 *
-	 * @author Set Kyar Wa Lar
+	 * @author SetKyarWaLar
 	 **/
 	public function now() {
 		$date = new DateTime();
@@ -24,7 +24,7 @@ class DateTimeFormat extends \DateTime
 	/**
 	 * Get first day of the current month
 	 *
-	 * @author Set Kyar Wa Lar
+	 * @author SetKyarWaLar
 	 **/
 	public function firstDayOfthisMonth()
 	{
@@ -36,7 +36,7 @@ class DateTimeFormat extends \DateTime
 	/**
 	 * Get last day of this month
 	 *
-	 * @author Set Kyar Wa Lar
+	 * @author SetKyarWaLar
 	 **/
 	public function lastDayOfthisMonth($value='')
 	{
@@ -48,7 +48,7 @@ class DateTimeFormat extends \DateTime
 	/**
 	 * Get first day of next month
 	 *
-	 * @author Set Kyar Wa Lar
+	 * @author SetKyarWaLar
 	 **/
 	public function firstDayOfNextMonth($value='')
 	{
@@ -60,7 +60,7 @@ class DateTimeFormat extends \DateTime
 	/**
 	 * Get last day of next month
 	 *
-	 * @author Set Kyar Wa Lar
+	 * @author SetKyarWaLar
 	 **/
 	public function lastDayOfNextMonth($value='')
 	{
@@ -69,4 +69,16 @@ class DateTimeFormat extends \DateTime
 		return $date->format('m-d-y');
 	}	
 
+	/**
+	 * Calculating age base on birthday
+	 *
+	 * @author SetKyarWaLar
+	 **/
+	public function myAge($bithdayDate)
+	{
+		$date 		= new DateTime($bithdayDate);
+		$now 		= new DateTime();
+		$interval 	= $now->diff($date);
+		return $interval->y;
+	}
 }
