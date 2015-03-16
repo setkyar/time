@@ -97,4 +97,21 @@ class DateTimeFormat extends \DateTime
 
 		return $diff->format('%H');
 	}
+
+	/**
+	 * Calculating end of day from now
+	 *
+	 * @author SetKyarWaLar
+	 **/
+	public function endOfDayFromNow()
+	{
+		$end_of_today 	= new DateTime();
+		$end_of_today->setTime(24, 60, 60);
+
+		$current		= new DateTime();
+
+		$diff 			= $end_of_today->diff($current);
+
+		return 'in ' . $diff->format('%H') . ' hours';
+	}
 }
