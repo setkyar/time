@@ -16,7 +16,8 @@ class DateTimeFormat extends \DateTime
 	 *
 	 * @author SetKyarWaLar
 	 **/
-	public function now() {
+	public function now() 
+	{
 		$date = new DateTime();
 		return $date->format('m-d-y');
 	}
@@ -29,7 +30,6 @@ class DateTimeFormat extends \DateTime
 	public function firstDayOfthisMonth()
 	{
 		$date = new DateTime('first day of this month');
-
 		return $date->format('m-d-y');
 	}
 
@@ -41,7 +41,6 @@ class DateTimeFormat extends \DateTime
 	public function lastDayOfthisMonth($value='')
 	{
 		$date = new DateTime('last day of this month');
-
 		return $date->format('m-d-y');
 	}
 
@@ -53,7 +52,6 @@ class DateTimeFormat extends \DateTime
 	public function firstDayOfNextMonth($value='')
 	{
 		$date = new DateTime('first day of next month');
-
 		return $date->format('m-d-y');
 	}
 
@@ -65,7 +63,6 @@ class DateTimeFormat extends \DateTime
 	public function lastDayOfNextMonth($value='')
 	{
 		$date = new DateTime('last day of next month');
-
 		return $date->format('m-d-y');
 	}	
 
@@ -91,10 +88,8 @@ class DateTimeFormat extends \DateTime
 	{
 		$start_of_today = new DateTime();
 		$start_of_today->setTime(00, 00, 00);
-		$current 		= new DateTime();
-
-		$diff 			= $current->diff($start_of_today);
-
+		$current = new DateTime();
+		$diff 	 = $current->diff($start_of_today);
 		return $diff->format('%H').' hours ago';
 	}
 
@@ -107,10 +102,8 @@ class DateTimeFormat extends \DateTime
 	{
 		$end_of_today 	= new DateTime();
 		$end_of_today->setTime(24, 60, 60);
-
-		$current		= new DateTime();
-		$diff 			= $end_of_today->diff($current);
-
+		$current = new DateTime();
+		$diff 	 = $end_of_today->diff($current);
 		return 'in ' . $diff->format('%H') . ' hours';
 	}
 
@@ -123,11 +116,6 @@ class DateTimeFormat extends \DateTime
 	static public function verifyDate($date, $format = 'm-d-y')
 	{
 		$format_date = DateTime::createFromFormat($format, $date);
-
-		if ($format_date && $format_date->format($format) == $date) {
-			return $date;
-		}
-
-		return 'This is wrong date';
+		return ($format_date && $format_date->format($format) == $date) $date : 'This is wrong date';
 	}
 }
