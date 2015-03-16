@@ -38,7 +38,7 @@ class DateTimeFormat extends \DateTime
 	 *
 	 * @author SetKyarWaLar
 	 **/
-	public function lastDayOfthisMonth($value='')
+	public function lastDayOfthisMonth()
 	{
 		$date = new DateTime('last day of this month');
 		return $date->format('m-d-y');
@@ -49,7 +49,7 @@ class DateTimeFormat extends \DateTime
 	 *
 	 * @author SetKyarWaLar
 	 **/
-	public function firstDayOfNextMonth($value='')
+	public function firstDayOfNextMonth()
 	{
 		$date = new DateTime('first day of next month');
 		return $date->format('m-d-y');
@@ -60,7 +60,7 @@ class DateTimeFormat extends \DateTime
 	 *
 	 * @author SetKyarWaLar
 	 **/
-	public function lastDayOfNextMonth($value='')
+	public function lastDayOfNextMonth()
 	{
 		$date = new DateTime('last day of next month');
 		return $date->format('m-d-y');
@@ -116,6 +116,10 @@ class DateTimeFormat extends \DateTime
 	static public function verifyDate($date, $format = 'm-d-y')
 	{
 		$format_date = DateTime::createFromFormat($format, $date);
-		return ($format_date && $format_date->format($format) == $date) $date : 'This is wrong date';
+		if ($format_date && $format_date->format($format) == $date) {		
+			return $date;		
+		}		
+		
+		return 'This is wrong date';		
 	}
 }
