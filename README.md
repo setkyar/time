@@ -1,29 +1,32 @@
 PHP Times
 ==========
-
-## WIP
-This repo is working in progress!
-
 ##Installation
 
 
 ##Usage
 
-###
+	//Get today
+	DateTimeFormat::now();
 
-Get first day of the month 
-
+	//Get first day of the month 
 	DateTimeFormat::firstDayOfthisMonth();
 
-
-Get last day of the month 
-
+	//Get last day of the month 
 	DateTimeFormat::lastDayOfthisMonth());
 
-Get First day of next month 		
-
+	//Get First day of next month 		
 	DateTimeFormat::firstDayOfNextMonth());
 
+	//Last Dat of Next Month
+	DateTimeFormat::lastDayOfNextMonth();
+
+	DateTimeFormat::myAge('22-11-1994');
+
+	DateTimeFormat::fromStartOfDay();
+
+	DateTimeFormat::endOfDayFromNow();
+
+	DateTimeFormat::verifyDate('16-03-2015', 'd-m-y');
 
 ##Contributing
 
