@@ -81,4 +81,15 @@ class DateTimeFormat extends \DateTime
 		$interval 	= $now->diff($date);
 		return $interval->y;
 	}
+
+	public function fromStartOfDay()
+	{
+		$start_of_today = new DateTime();
+		$start_of_today->setTime(00, 00, 00);
+		$current 		= new DateTime();
+
+		$diff = $current->diff($start_of_today);
+
+		return $diff->format('%H');
+	}
 }
