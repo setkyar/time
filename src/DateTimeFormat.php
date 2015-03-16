@@ -82,6 +82,11 @@ class DateTimeFormat extends \DateTime
 		return $interval->y;
 	}
 
+	/**
+	 * Get start of the day from now difference hours
+	 *
+	 * @author SetKyarWaLar
+	 **/
 	public function fromStartOfDay()
 	{
 		$start_of_today = new DateTime();
