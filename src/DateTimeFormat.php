@@ -95,7 +95,7 @@ class DateTimeFormat extends \DateTime
 
 		$diff = $current->diff($start_of_today);
 
-		return $diff->format('%H');
+		return $diff->format('%H').' hours ago';
 	}
 
 	/**
