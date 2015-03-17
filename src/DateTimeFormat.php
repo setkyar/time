@@ -22,6 +22,12 @@ class DateTimeFormat extends \DateTime
 		return $date->format('m-d-y');
 	}
 
+	public function tomorrow()
+	{
+		$date = new DateTime("tomorrow");
+		return $date->format('m-d-y');
+	}
+
 	/**
 	 * Get first day of the current month
 	 *
