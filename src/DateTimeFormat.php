@@ -71,7 +71,7 @@ class DateTimeFormat extends \DateTime
 	 *
 	 * @author SetKyarWaLar
 	 **/
-	public function myAge($bithdayDate)
+	public function age($bithdayDate)
 	{
 		$date 		= new DateTime($bithdayDate);
 		$now 		= new DateTime();
@@ -88,8 +88,9 @@ class DateTimeFormat extends \DateTime
 	{
 		$start_of_today = new DateTime();
 		$start_of_today->setTime(00, 00, 00);
-		$current = new DateTime();
-		$diff 	 = $current->diff($start_of_today);
+
+		$current 		= new DateTime();
+		$diff 	 		= $current->diff($start_of_today);
 		return $diff->format('%H').' hours ago';
 	}
 
@@ -102,8 +103,9 @@ class DateTimeFormat extends \DateTime
 	{
 		$end_of_today 	= new DateTime();
 		$end_of_today->setTime(24, 60, 60);
-		$current = new DateTime();
-		$diff 	 = $end_of_today->diff($current);
+
+		$current 		= new DateTime();
+		$diff 	 		= $end_of_today->diff($current);
 		return 'in ' . $diff->format('%H') . ' hours';
 	}
 
@@ -113,7 +115,7 @@ class DateTimeFormat extends \DateTime
 	 *
 	 * @author SetKyarWaLar
 	 **/
-	static public function verifyDate($date, $format = 'm-d-y')
+	public function verifyDate($date, $format = 'm-d-y')
 	{
 		$format_date = DateTime::createFromFormat($format, $date);
 		if ($format_date && $format_date->format($format) == $date) {		
