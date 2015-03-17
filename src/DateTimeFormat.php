@@ -22,6 +22,11 @@ class DateTimeFormat extends \DateTime
 		return $date->format('m-d-y');
 	}
 
+	/**
+	 * Get tomorrow date
+	 *
+	 * @author SetKyarWaLar
+	 **/
 	public function tomorrow()
 	{
 		$date = new DateTime("tomorrow");

@@ -42,7 +42,7 @@ Create a `index.php` and put the following code and run `$php -S localhost:8000`
 	//Last Dat of Next Month
 	DateTimeFormat::lastDayOfNextMonth();
 
-	DateTimeFormat::myAge('22-11-1994');
+	DateTimeFormat::age('22-11-1994');
 
 	DateTimeFormat::fromStartOfDay();
 
