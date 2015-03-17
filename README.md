@@ -1,8 +1,10 @@
 PHP Times
 ==========
 ##Installation
+
+Run the following via your terminal
 	
-	$composer require "setkyar/datetimeformat": "dev-master"
+	composer require "setkyar/datetimeformat"
 
 ##Usage
 
