@@ -29,30 +29,30 @@ Create a `index.php` and put the following code and run `$php -S localhost:8000`
 
 ##Functions
 
-	####Get today
+####Get today
 	
 	```php
 	DateTimeFormat::now();
 	```
 
-	####Get first day of the month 
+####Get first day of the month 
 	
 	```php
 	DateTimeFormat::firstDayOfthisMonth();
 	```
-	####Get last day of the month 
+####Get last day of the month 
 	
 	```php
 	DateTimeFormat::lastDayOfthisMonth());
 	```
 	
-	####Get First day of next month 		
+####Get First day of next month 		
 	
 	```php
 	DateTimeFormat::firstDayOfNextMonth());
 	```
 	
-	####Last Dat of Next Month
+####Last Dat of Next Month
 	
 	```php
 	DateTimeFormat::lastDayOfNextMonth();
