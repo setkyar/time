@@ -31,30 +31,23 @@ Create a `index.php` and put the following code and run `$php -S localhost:8000`
 
 ####Get today
 	
-	```php
 	DateTimeFormat::now();
-	```
 
 ####Get first day of the month 
 	
-	```php
 	DateTimeFormat::firstDayOfthisMonth();
-	```
+
 ####Get last day of the month 
 	
-	```php
 	DateTimeFormat::lastDayOfthisMonth());
-	```
 	
 ####Get First day of next month 		
-	
-	```php
+
 	DateTimeFormat::firstDayOfNextMonth());
-	```
+
 	
 ####Last Dat of Next Month
 	
-	```php
 	DateTimeFormat::lastDayOfNextMonth();
 	
 	DateTimeFormat::age('22-11-1994');
@@ -64,7 +57,6 @@ Create a `index.php` and put the following code and run `$php -S localhost:8000`
 	DateTimeFormat::endOfDayFromNow();
 
 	DateTimeFormat::verifyDate('16-03-2015', 'd-m-y');
-	```
 	
 ##Contributing
 
